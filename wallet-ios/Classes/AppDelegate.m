@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "TabBarVC.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +18,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self setupRootVC];
     return YES;
 }
 
@@ -47,5 +49,13 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)setupRootVC {
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = BgColor;
+    self.window.rootViewController = [[TabBarVC alloc] init];
+    [self.window makeKeyAndVisible];
+}
 
 @end

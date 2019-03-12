@@ -8,11 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		04589DDD21E3432000910318 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589DDC21E3432000910318 /* AppDelegate.m */; };
-		04589DE021E3432000910318 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589DDF21E3432000910318 /* ViewController.m */; };
 		04589DE321E3432000910318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04589DE121E3432000910318 /* Main.storyboard */; };
 		04589DE521E3432100910318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04589DE421E3432100910318 /* Assets.xcassets */; };
 		04589DE821E3432100910318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04589DE621E3432100910318 /* LaunchScreen.storyboard */; };
 		04589DEB21E3432100910318 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589DEA21E3432100910318 /* main.m */; };
+		04589DF821E34A5400910318 /* NavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589DF421E34A5400910318 /* NavVC.m */; };
+		04589DF921E34A5400910318 /* TabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589DF721E34A5400910318 /* TabBarVC.m */; };
+		04589DFF21E34AED00910318 /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589DFB21E34AED00910318 /* UIColor+Util.m */; };
+		04589E0021E34AED00910318 /* UIImage+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589DFE21E34AED00910318 /* UIImage+Util.m */; };
+		04589E0521E3515A00910318 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589E0321E3515A00910318 /* BaseVC.m */; };
+		04589E0921E3523900910318 /* WalletVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589E0721E3523900910318 /* WalletVC.m */; };
+		04589E0A21E3523900910318 /* WalletVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04589E0821E3523900910318 /* WalletVC.xib */; };
+		04589E0F21E3528600910318 /* ExploreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589E0D21E3528600910318 /* ExploreVC.m */; };
+		04589E1021E3528600910318 /* ExploreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04589E0E21E3528600910318 /* ExploreVC.xib */; };
+		04589E1521E3529F00910318 /* MyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589E1321E3529F00910318 /* MyVC.m */; };
+		04589E1621E3529F00910318 /* MyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04589E1421E3529F00910318 /* MyVC.xib */; };
 		6E5B108C7B74A79DEBF29EE6 /* libPods-wallet-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E8285F90ADA30D5FE69065 /* libPods-wallet-ios.a */; };
 /* End PBXBuildFile section */
 
@@ -20,13 +30,31 @@
 		04589DD821E3432000910318 /* wallet-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wallet-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04589DDB21E3432000910318 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04589DDC21E3432000910318 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		04589DDE21E3432000910318 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		04589DDF21E3432000910318 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		04589DE221E3432000910318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04589DE421E3432100910318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04589DE721E3432100910318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04589DE921E3432100910318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04589DEA21E3432100910318 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04589DF421E34A5400910318 /* NavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavVC.m; sourceTree = "<group>"; };
+		04589DF521E34A5400910318 /* NavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavVC.h; sourceTree = "<group>"; };
+		04589DF621E34A5400910318 /* TabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVC.h; sourceTree = "<group>"; };
+		04589DF721E34A5400910318 /* TabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVC.m; sourceTree = "<group>"; };
+		04589DFB21E34AED00910318 /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
+		04589DFC21E34AED00910318 /* UIImage+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Util.h"; sourceTree = "<group>"; };
+		04589DFD21E34AED00910318 /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
+		04589DFE21E34AED00910318 /* UIImage+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Util.m"; sourceTree = "<group>"; };
+		04589E0121E34BCE00910318 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04589E0321E3515A00910318 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		04589E0421E3515A00910318 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		04589E0621E3523900910318 /* WalletVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletVC.h; sourceTree = "<group>"; };
+		04589E0721E3523900910318 /* WalletVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletVC.m; sourceTree = "<group>"; };
+		04589E0821E3523900910318 /* WalletVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletVC.xib; sourceTree = "<group>"; };
+		04589E0C21E3528600910318 /* ExploreVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreVC.h; sourceTree = "<group>"; };
+		04589E0D21E3528600910318 /* ExploreVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreVC.m; sourceTree = "<group>"; };
+		04589E0E21E3528600910318 /* ExploreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreVC.xib; sourceTree = "<group>"; };
+		04589E1221E3529F00910318 /* MyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyVC.h; sourceTree = "<group>"; };
+		04589E1321E3529F00910318 /* MyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVC.m; sourceTree = "<group>"; };
+		04589E1421E3529F00910318 /* MyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyVC.xib; sourceTree = "<group>"; };
 		51E8285F90ADA30D5FE69065 /* libPods-wallet-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wallet-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DE74363F471755A758B470 /* Pods-wallet-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-wallet-ios/Pods-wallet-ios.release.xcconfig"; sourceTree = "<group>"; };
 		F2AA3601ECBE70E53FF32BA6 /* Pods-wallet-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wallet-ios/Pods-wallet-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,17 +93,91 @@
 		04589DDA21E3432000910318 /* wallet-ios */ = {
 			isa = PBXGroup;
 			children = (
-				04589DDB21E3432000910318 /* AppDelegate.h */,
-				04589DDC21E3432000910318 /* AppDelegate.m */,
-				04589DDE21E3432000910318 /* ViewController.h */,
-				04589DDF21E3432000910318 /* ViewController.m */,
+				04589DF121E3495500910318 /* Classes */,
 				04589DE121E3432000910318 /* Main.storyboard */,
 				04589DE421E3432100910318 /* Assets.xcassets */,
 				04589DE621E3432100910318 /* LaunchScreen.storyboard */,
 				04589DE921E3432100910318 /* Info.plist */,
 				04589DEA21E3432100910318 /* main.m */,
+				04589E0121E34BCE00910318 /* PrefixHeader.pch */,
 			);
 			path = "wallet-ios";
+			sourceTree = "<group>";
+		};
+		04589DF121E3495500910318 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04589DDB21E3432000910318 /* AppDelegate.h */,
+				04589DDC21E3432000910318 /* AppDelegate.m */,
+				04589DF321E34A1B00910318 /* Nav */,
+				04589DF221E34A1300910318 /* Base */,
+				04589E1121E3528C00910318 /* My */,
+				04589E0B21E3526800910318 /* Explore */,
+				04589E0221E350F500910318 /* Wallet */,
+				04589DFA21E34AA800910318 /* Util */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		04589DF221E34A1300910318 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				04589E0421E3515A00910318 /* BaseVC.h */,
+				04589E0321E3515A00910318 /* BaseVC.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		04589DF321E34A1B00910318 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				04589DF521E34A5400910318 /* NavVC.h */,
+				04589DF421E34A5400910318 /* NavVC.m */,
+				04589DF621E34A5400910318 /* TabBarVC.h */,
+				04589DF721E34A5400910318 /* TabBarVC.m */,
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		04589DFA21E34AA800910318 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				04589DFD21E34AED00910318 /* UIColor+Util.h */,
+				04589DFB21E34AED00910318 /* UIColor+Util.m */,
+				04589DFC21E34AED00910318 /* UIImage+Util.h */,
+				04589DFE21E34AED00910318 /* UIImage+Util.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		04589E0221E350F500910318 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				04589E0621E3523900910318 /* WalletVC.h */,
+				04589E0721E3523900910318 /* WalletVC.m */,
+				04589E0821E3523900910318 /* WalletVC.xib */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		04589E0B21E3526800910318 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				04589E0C21E3528600910318 /* ExploreVC.h */,
+				04589E0D21E3528600910318 /* ExploreVC.m */,
+				04589E0E21E3528600910318 /* ExploreVC.xib */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		04589E1121E3528C00910318 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				04589E1221E3529F00910318 /* MyVC.h */,
+				04589E1321E3529F00910318 /* MyVC.m */,
+				04589E1421E3529F00910318 /* MyVC.xib */,
+			);
+			path = My;
 			sourceTree = "<group>";
 		};
 		53D365D2A77DFED14657D39E /* Frameworks */ = {
@@ -153,9 +255,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04589E1021E3528600910318 /* ExploreVC.xib in Resources */,
 				04589DE821E3432100910318 /* LaunchScreen.storyboard in Resources */,
 				04589DE521E3432100910318 /* Assets.xcassets in Resources */,
 				04589DE321E3432000910318 /* Main.storyboard in Resources */,
+				04589E1621E3529F00910318 /* MyVC.xib in Resources */,
+				04589E0A21E3523900910318 /* WalletVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,15 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-wallet-ios-checkManifestLockResult.txt",
 			);
@@ -191,9 +292,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04589DE021E3432000910318 /* ViewController.m in Sources */,
+				04589E0F21E3528600910318 /* ExploreVC.m in Sources */,
+				04589DF821E34A5400910318 /* NavVC.m in Sources */,
+				04589DFF21E34AED00910318 /* UIColor+Util.m in Sources */,
+				04589E1521E3529F00910318 /* MyVC.m in Sources */,
+				04589E0921E3523900910318 /* WalletVC.m in Sources */,
 				04589DEB21E3432100910318 /* main.m in Sources */,
+				04589DF921E34A5400910318 /* TabBarVC.m in Sources */,
+				04589E0021E34AED00910318 /* UIImage+Util.m in Sources */,
 				04589DDD21E3432000910318 /* AppDelegate.m in Sources */,
+				04589E0521E3515A00910318 /* BaseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XAF9X97T6K;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/wallet-ios/PrefixHeader.pch";
 				INFOPLIST_FILE = "wallet-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -355,6 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XAF9X97T6K;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/wallet-ios/PrefixHeader.pch";
 				INFOPLIST_FILE = "wallet-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

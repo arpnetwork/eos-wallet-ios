@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  wallet-ios
+//
+//  Created by mac on 2019/1/7.
+//  Copyright © 2019年 mac. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#if DEBUG
+#define ILog(x, ...) NSLog(x, ## __VA_ARGS__);
+#else
+#define ILog(x, ...)
+#endif
+
+#define MAINSCREEN [[UIScreen mainScreen] bounds]
+#define SCREEN_WIDTH MAINSCREEN.size.width
+#define SCREEN_HEIGHT MAINSCREEN.size.height
+
+//style
+#import "UIColor+Util.h"
+#define BaseColor [UIColor colorWithHex:0x3d7cf5]
+#define BgColor [UIColor colorWithHex:0xf3f3f8]
+
+#endif /* PrefixHeader_pch */

@@ -20,9 +20,9 @@
 		04589E0921E3523900910318 /* WalletVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589E0721E3523900910318 /* WalletVC.m */; };
 		04589E0A21E3523900910318 /* WalletVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04589E0821E3523900910318 /* WalletVC.xib */; };
 		04589E0F21E3528600910318 /* ExploreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589E0D21E3528600910318 /* ExploreVC.m */; };
-		04589E1021E3528600910318 /* ExploreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04589E0E21E3528600910318 /* ExploreVC.xib */; };
 		04589E1521E3529F00910318 /* MyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589E1321E3529F00910318 /* MyVC.m */; };
 		04589E1621E3529F00910318 /* MyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04589E1421E3529F00910318 /* MyVC.xib */; };
+		04589E1A21E37D7800910318 /* ReceiptTransferButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589E1921E37D7800910318 /* ReceiptTransferButton.m */; };
 		6E5B108C7B74A79DEBF29EE6 /* libPods-wallet-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E8285F90ADA30D5FE69065 /* libPods-wallet-ios.a */; };
 /* End PBXBuildFile section */
 
@@ -51,10 +51,11 @@
 		04589E0821E3523900910318 /* WalletVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletVC.xib; sourceTree = "<group>"; };
 		04589E0C21E3528600910318 /* ExploreVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreVC.h; sourceTree = "<group>"; };
 		04589E0D21E3528600910318 /* ExploreVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreVC.m; sourceTree = "<group>"; };
-		04589E0E21E3528600910318 /* ExploreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreVC.xib; sourceTree = "<group>"; };
 		04589E1221E3529F00910318 /* MyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyVC.h; sourceTree = "<group>"; };
 		04589E1321E3529F00910318 /* MyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVC.m; sourceTree = "<group>"; };
 		04589E1421E3529F00910318 /* MyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyVC.xib; sourceTree = "<group>"; };
+		04589E1821E37D7800910318 /* ReceiptTransferButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReceiptTransferButton.h; sourceTree = "<group>"; };
+		04589E1921E37D7800910318 /* ReceiptTransferButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReceiptTransferButton.m; sourceTree = "<group>"; };
 		51E8285F90ADA30D5FE69065 /* libPods-wallet-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wallet-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DE74363F471755A758B470 /* Pods-wallet-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-wallet-ios/Pods-wallet-ios.release.xcconfig"; sourceTree = "<group>"; };
 		F2AA3601ECBE70E53FF32BA6 /* Pods-wallet-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wallet-ios/Pods-wallet-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,10 +112,11 @@
 				04589DDC21E3432000910318 /* AppDelegate.m */,
 				04589DF321E34A1B00910318 /* Nav */,
 				04589DF221E34A1300910318 /* Base */,
-				04589E1121E3528C00910318 /* My */,
-				04589E0B21E3526800910318 /* Explore */,
 				04589E0221E350F500910318 /* Wallet */,
+				04589E0B21E3526800910318 /* Explore */,
+				04589E1121E3528C00910318 /* My */,
 				04589DFA21E34AA800910318 /* Util */,
+				04589E1721E37C8E00910318 /* View */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -165,7 +167,6 @@
 			children = (
 				04589E0C21E3528600910318 /* ExploreVC.h */,
 				04589E0D21E3528600910318 /* ExploreVC.m */,
-				04589E0E21E3528600910318 /* ExploreVC.xib */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -178,6 +179,15 @@
 				04589E1421E3529F00910318 /* MyVC.xib */,
 			);
 			path = My;
+			sourceTree = "<group>";
+		};
+		04589E1721E37C8E00910318 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04589E1821E37D7800910318 /* ReceiptTransferButton.h */,
+				04589E1921E37D7800910318 /* ReceiptTransferButton.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		53D365D2A77DFED14657D39E /* Frameworks */ = {
@@ -255,7 +265,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04589E1021E3528600910318 /* ExploreVC.xib in Resources */,
 				04589DE821E3432100910318 /* LaunchScreen.storyboard in Resources */,
 				04589DE521E3432100910318 /* Assets.xcassets in Resources */,
 				04589DE321E3432000910318 /* Main.storyboard in Resources */,
@@ -296,6 +305,7 @@
 				04589DF821E34A5400910318 /* NavVC.m in Sources */,
 				04589DFF21E34AED00910318 /* UIColor+Util.m in Sources */,
 				04589E1521E3529F00910318 /* MyVC.m in Sources */,
+				04589E1A21E37D7800910318 /* ReceiptTransferButton.m in Sources */,
 				04589E0921E3523900910318 /* WalletVC.m in Sources */,
 				04589DEB21E3432100910318 /* main.m in Sources */,
 				04589DF921E34A5400910318 /* TabBarVC.m in Sources */,

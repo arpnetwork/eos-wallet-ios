@@ -20,6 +20,7 @@
 #define SCREEN_HEIGHT MAINSCREEN.size.height
 
 #define IS_IPHONE_X (SCREEN_HEIGHT == 812.0f)
+#define ISEMPTY(str) ((!str || str.length == 0) ? YES : NO)
 
 #define NavBarHeight (IS_IPHONE_X ? 88.0f : 64.0f)
 #define StatusBarHeight (IS_IPHONE_X ? 44.0f : 20.0f)

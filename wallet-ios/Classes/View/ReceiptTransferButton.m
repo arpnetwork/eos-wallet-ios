@@ -18,7 +18,6 @@
 
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-//        self.tintColor = [UIColor whiteColor];
         [self setTitleColor:[UIColor colorWithHex:0x5a5b5c] forState:UIControlStateNormal];
         self.titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
     }

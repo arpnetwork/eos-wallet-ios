@@ -23,6 +23,12 @@
 		04589E1521E3529F00910318 /* MyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589E1321E3529F00910318 /* MyVC.m */; };
 		04589E1621E3529F00910318 /* MyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04589E1421E3529F00910318 /* MyVC.xib */; };
 		04589E1A21E37D7800910318 /* ReceiptTransferButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589E1921E37D7800910318 /* ReceiptTransferButton.m */; };
+		045E2D5721E4A2F1007439B6 /* TransferVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E2D5521E4A2F1007439B6 /* TransferVC.m */; };
+		045E2D5821E4A2F1007439B6 /* TransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045E2D5621E4A2F1007439B6 /* TransferVC.xib */; };
+		049334C221E592DB00F1137A /* WTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049334C121E592DB00F1137A /* WTextView.m */; };
+		04AB4D7C21E7202000418AA2 /* AssetsTypePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB4D7B21E7202000418AA2 /* AssetsTypePopView.m */; };
+		04AB4D7F21E72BD400418AA2 /* TransferPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB4D7E21E72BD400418AA2 /* TransferPopView.m */; };
+		04AB4D8121E72C0100418AA2 /* TransferPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB4D8021E72C0100418AA2 /* TransferPopView.xib */; };
 		6E5B108C7B74A79DEBF29EE6 /* libPods-wallet-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E8285F90ADA30D5FE69065 /* libPods-wallet-ios.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +62,16 @@
 		04589E1421E3529F00910318 /* MyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyVC.xib; sourceTree = "<group>"; };
 		04589E1821E37D7800910318 /* ReceiptTransferButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReceiptTransferButton.h; sourceTree = "<group>"; };
 		04589E1921E37D7800910318 /* ReceiptTransferButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReceiptTransferButton.m; sourceTree = "<group>"; };
+		045E2D5421E4A2F1007439B6 /* TransferVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferVC.h; sourceTree = "<group>"; };
+		045E2D5521E4A2F1007439B6 /* TransferVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferVC.m; sourceTree = "<group>"; };
+		045E2D5621E4A2F1007439B6 /* TransferVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferVC.xib; sourceTree = "<group>"; };
+		049334C021E592DB00F1137A /* WTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTextView.h; sourceTree = "<group>"; };
+		049334C121E592DB00F1137A /* WTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTextView.m; sourceTree = "<group>"; };
+		04AB4D7A21E7202000418AA2 /* AssetsTypePopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsTypePopView.h; sourceTree = "<group>"; };
+		04AB4D7B21E7202000418AA2 /* AssetsTypePopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsTypePopView.m; sourceTree = "<group>"; };
+		04AB4D7D21E72BD400418AA2 /* TransferPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferPopView.h; sourceTree = "<group>"; };
+		04AB4D7E21E72BD400418AA2 /* TransferPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferPopView.m; sourceTree = "<group>"; };
+		04AB4D8021E72C0100418AA2 /* TransferPopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferPopView.xib; sourceTree = "<group>"; };
 		51E8285F90ADA30D5FE69065 /* libPods-wallet-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wallet-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DE74363F471755A758B470 /* Pods-wallet-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-wallet-ios/Pods-wallet-ios.release.xcconfig"; sourceTree = "<group>"; };
 		F2AA3601ECBE70E53FF32BA6 /* Pods-wallet-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wallet-ios/Pods-wallet-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +131,7 @@
 				04589E0221E350F500910318 /* Wallet */,
 				04589E0B21E3526800910318 /* Explore */,
 				04589E1121E3528C00910318 /* My */,
+				045E2D5321E4A2BB007439B6 /* Transfer */,
 				04589DFA21E34AA800910318 /* Util */,
 				04589E1721E37C8E00910318 /* View */,
 			);
@@ -186,8 +203,25 @@
 			children = (
 				04589E1821E37D7800910318 /* ReceiptTransferButton.h */,
 				04589E1921E37D7800910318 /* ReceiptTransferButton.m */,
+				049334C021E592DB00F1137A /* WTextView.h */,
+				049334C121E592DB00F1137A /* WTextView.m */,
+				04AB4D7A21E7202000418AA2 /* AssetsTypePopView.h */,
+				04AB4D7B21E7202000418AA2 /* AssetsTypePopView.m */,
+				04AB4D7D21E72BD400418AA2 /* TransferPopView.h */,
+				04AB4D7E21E72BD400418AA2 /* TransferPopView.m */,
+				04AB4D8021E72C0100418AA2 /* TransferPopView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		045E2D5321E4A2BB007439B6 /* Transfer */ = {
+			isa = PBXGroup;
+			children = (
+				045E2D5421E4A2F1007439B6 /* TransferVC.h */,
+				045E2D5521E4A2F1007439B6 /* TransferVC.m */,
+				045E2D5621E4A2F1007439B6 /* TransferVC.xib */,
+			);
+			path = Transfer;
 			sourceTree = "<group>";
 		};
 		53D365D2A77DFED14657D39E /* Frameworks */ = {
@@ -266,6 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04589DE821E3432100910318 /* LaunchScreen.storyboard in Resources */,
+				04AB4D8121E72C0100418AA2 /* TransferPopView.xib in Resources */,
+				045E2D5821E4A2F1007439B6 /* TransferVC.xib in Resources */,
 				04589DE521E3432100910318 /* Assets.xcassets in Resources */,
 				04589DE321E3432000910318 /* Main.storyboard in Resources */,
 				04589E1621E3529F00910318 /* MyVC.xib in Resources */,
@@ -302,14 +338,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				04589E0F21E3528600910318 /* ExploreVC.m in Sources */,
+				04AB4D7C21E7202000418AA2 /* AssetsTypePopView.m in Sources */,
 				04589DF821E34A5400910318 /* NavVC.m in Sources */,
 				04589DFF21E34AED00910318 /* UIColor+Util.m in Sources */,
 				04589E1521E3529F00910318 /* MyVC.m in Sources */,
+				049334C221E592DB00F1137A /* WTextView.m in Sources */,
 				04589E1A21E37D7800910318 /* ReceiptTransferButton.m in Sources */,
 				04589E0921E3523900910318 /* WalletVC.m in Sources */,
+				04AB4D7F21E72BD400418AA2 /* TransferPopView.m in Sources */,
 				04589DEB21E3432100910318 /* main.m in Sources */,
 				04589DF921E34A5400910318 /* TabBarVC.m in Sources */,
 				04589E0021E34AED00910318 /* UIImage+Util.m in Sources */,
+				045E2D5721E4A2F1007439B6 /* TransferVC.m in Sources */,
 				04589DDD21E3432000910318 /* AppDelegate.m in Sources */,
 				04589E0521E3515A00910318 /* BaseVC.m in Sources */,
 			);

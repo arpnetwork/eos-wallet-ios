@@ -8,6 +8,7 @@
 
 #import "WalletVC.h"
 
+#import "TransferVC.h"
 #import "AFNetworking.h"
 
 @interface WalletVC ()
@@ -198,7 +199,10 @@
 }
 
 - (IBAction)transferButtonClicked:(id)sender {
-    ILog(@"transferButtonClicked");
+    TransferVC *transferVC = [[TransferVC alloc] initWithDict:@{@"EOS_BALANCE": [NSNumber numberWithDouble:self.eosBalance],
+                                                                @"BHKD_BALANCE": [NSNumber numberWithDouble:self.bhkdBalance],
+                                                                @"ACCOUNT": self.account}];
+    [self.navigationController pushViewController:transferVC animated:YES];
 }
 
 - (void)eosItemTapped:(UITapGestureRecognizer *)gesture {

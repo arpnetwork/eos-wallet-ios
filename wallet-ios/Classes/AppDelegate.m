@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "TabBarVC.h"
+#import "EosPrivateKey.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setupRootVC];
+    // TODO: test for privateKey.
+    EosPrivateKey *privateKey = [[EosPrivateKey alloc] initEosPrivateKey];
+    ILog(@"privateKey string = %@, pub = %@",privateKey.eosPrivateKey,privateKey.eosPublicKey);
+    
     return YES;
 }
 

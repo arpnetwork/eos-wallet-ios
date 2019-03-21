@@ -9,37 +9,25 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-#if DEBUG
-#define ILog(x, ...) NSLog(x, ## __VA_ARGS__);
-#else
-#define ILog(x, ...)
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
 #endif
 
-#define MAINSCREEN [[UIScreen mainScreen] bounds]
-#define SCREEN_WIDTH MAINSCREEN.size.width
-#define SCREEN_HEIGHT MAINSCREEN.size.height
+#ifdef __OBJC__
+/**
+ *  导入系统文件
+ */
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-#define IS_IPHONE_X (SCREEN_HEIGHT == 812.0f)
-#define ISEMPTY(str) ((!str || str.length == 0) ? YES : NO)
+/**
+ *  导入自定义全局文件
+ */
+#import "NSObject+ToolClass.h"
+#import "BaseUrl.h"
+#import "Constant.h"
 
-#define NavBarHeight (IS_IPHONE_X ? 88.0f : 64.0f)
-#define StatusBarHeight (IS_IPHONE_X ? 44.0f : 20.0f)
-
-//style
-#import "UIColor+Util.h"
-#define BaseColor [UIColor colorWithHex:0x3d7cf5]
-#define BgColor [UIColor colorWithHex:0xf3f3f8]
-
-//contract
-#define EOSIO_TOKEN_CONTRACT @"eosio.token"
-#define BHKD_TOKEN_CONTRACT @"aptest555554"
-
-//url
-#define HTTP_ADDRESS @"http://122.152.214.84:8080"
-#define HTTP_GET_EOS_PRICE [HTTP_ADDRESS stringByAppendingString:@"/eos/getprice"]
-#define HTTP_GET_BHKD_PRICE [HTTP_ADDRESS stringByAppendingString:@"/rate/hkdcny"]
-
-#define HTTP_CHAIN_ADDRESS @"http://39.108.231.157:30065/v1"
-#define HTTP_GET_BALANCE [HTTP_CHAIN_ADDRESS stringByAppendingString:@"/chain/get_currency_balance"]
-
+#endif /* __OBJC__ */
 #endif /* PrefixHeader_pch */

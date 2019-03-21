@@ -29,6 +29,38 @@
 		04AB4D7C21E7202000418AA2 /* AssetsTypePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB4D7B21E7202000418AA2 /* AssetsTypePopView.m */; };
 		04AB4D7F21E72BD400418AA2 /* TransferPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB4D7E21E72BD400418AA2 /* TransferPopView.m */; };
 		04AB4D8121E72C0100418AA2 /* TransferPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB4D8021E72C0100418AA2 /* TransferPopView.xib */; };
+		4E71F2BB21E748C6002467FE /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F28721E748C6002467FE /* AESCrypt.m */; };
+		4E71F2BC21E748C6002467FE /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F28921E748C6002467FE /* Base64.m */; };
+		4E71F2BD21E748C6002467FE /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F28B21E748C6002467FE /* NSData+CommonCrypto.m */; };
+		4E71F2BE21E748C6002467FE /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F28D21E748C6002467FE /* NSObject+Extension.m */; };
+		4E71F2BF21E748C6002467FE /* PBKDF2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F28F21E748C6002467FE /* PBKDF2.m */; };
+		4E71F2C021E748C6002467FE /* client.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 4E71F29121E748C6002467FE /* client.p12 */; };
+		4E71F2C121E748C6002467FE /* server.cer in Resources */ = {isa = PBXBuildFile; fileRef = 4E71F29221E748C6002467FE /* server.cer */; };
+		4E71F2C221E748C6002467FE /* base58.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F29421E748C6002467FE /* base58.c */; };
+		4E71F2C321E748C6002467FE /* rmd160.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F29821E748C6002467FE /* rmd160.c */; };
+		4E71F2C421E748C6002467FE /* sha2.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F29A21E748C6002467FE /* sha2.c */; };
+		4E71F2C521E748C6002467FE /* sha3.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F29C21E748C6002467FE /* sha3.c */; };
+		4E71F2C621E748C6002467FE /* uECC.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F29E21E748C6002467FE /* uECC.c */; };
+		4E71F2C721E748C6002467FE /* EcDsa.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2A221E748C6002467FE /* EcDsa.m */; };
+		4E71F2C821E748C6002467FE /* EOS_Key_Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2A421E748C6002467FE /* EOS_Key_Encode.m */; };
+		4E71F2C921E748C6002467FE /* EosByteWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2A621E748C6002467FE /* EosByteWriter.m */; };
+		4E71F2CA21E748C6002467FE /* EosPrivateKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2A821E748C6002467FE /* EosPrivateKey.m */; };
+		4E71F2CB21E748C6002467FE /* Sha256.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2AA21E748C6002467FE /* Sha256.m */; };
+		4E71F2CC21E748C6002467FE /* TypeChainId.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2AC21E748C6002467FE /* TypeChainId.m */; };
+		4E71F2CD21E748C6002467FE /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2AF21E748C6002467FE /* NSString+Hash.m */; };
+		4E71F2CE21E748C6002467FE /* JKBigDecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2B221E748C6002467FE /* JKBigDecimal.m */; };
+		4E71F2CF21E748C6002467FE /* JKBigInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2B421E748C6002467FE /* JKBigInteger.m */; };
+		4E71F2D021E748C6002467FE /* tommath.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2B621E748C6002467FE /* tommath.c */; };
+		4E71F2E721E748F3002467FE /* CALayer+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2D321E748F2002467FE /* CALayer+XibConfiguration.m */; };
+		4E71F2E821E748F3002467FE /* NSData+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2D521E748F2002467FE /* NSData+Hash.m */; };
+		4E71F2E921E748F3002467FE /* NSDate+ExFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2D721E748F2002467FE /* NSDate+ExFoundation.m */; };
+		4E71F2EA21E748F3002467FE /* NSDictionary+ExFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2D921E748F2002467FE /* NSDictionary+ExFoundation.m */; };
+		4E71F2EB21E748F3002467FE /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2DB21E748F2002467FE /* NSObject+Extension.m */; };
+		4E71F2EC21E748F3002467FE /* NSString+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2DD21E748F2002467FE /* NSString+Extention.m */; };
+		4E71F2ED21E748F3002467FE /* UIImage+ExFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2DF21E748F2002467FE /* UIImage+ExFoundation.m */; };
+		4E71F2EE21E748F3002467FE /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2E121E748F2002467FE /* UITextView+Placeholder.m */; };
+		4E71F2EF21E748F3002467FE /* RegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2E421E748F3002467FE /* RegularExpression.m */; };
+		4E71F2F021E748F3002467FE /* WWJRegularJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F2E621E748F3002467FE /* WWJRegularJudge.m */; };
 		6E5B108C7B74A79DEBF29EE6 /* libPods-wallet-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E8285F90ADA30D5FE69065 /* libPods-wallet-ios.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +104,75 @@
 		04AB4D7D21E72BD400418AA2 /* TransferPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferPopView.h; sourceTree = "<group>"; };
 		04AB4D7E21E72BD400418AA2 /* TransferPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferPopView.m; sourceTree = "<group>"; };
 		04AB4D8021E72C0100418AA2 /* TransferPopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferPopView.xib; sourceTree = "<group>"; };
+		4E71F28221E748A1002467FE /* BaseUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUrl.h; sourceTree = "<group>"; };
+		4E71F28321E748A1002467FE /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		4E71F28621E748C6002467FE /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		4E71F28721E748C6002467FE /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		4E71F28821E748C6002467FE /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		4E71F28921E748C6002467FE /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		4E71F28A21E748C6002467FE /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		4E71F28B21E748C6002467FE /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		4E71F28C21E748C6002467FE /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		4E71F28D21E748C6002467FE /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		4E71F28E21E748C6002467FE /* PBKDF2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBKDF2.h; sourceTree = "<group>"; };
+		4E71F28F21E748C6002467FE /* PBKDF2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBKDF2.m; sourceTree = "<group>"; };
+		4E71F29121E748C6002467FE /* client.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = client.p12; sourceTree = "<group>"; };
+		4E71F29221E748C6002467FE /* server.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = server.cer; sourceTree = "<group>"; };
+		4E71F29421E748C6002467FE /* base58.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base58.c; sourceTree = "<group>"; };
+		4E71F29521E748C6002467FE /* libbase58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libbase58.h; sourceTree = "<group>"; };
+		4E71F29621E748C6002467FE /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		4E71F29721E748C6002467FE /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		4E71F29821E748C6002467FE /* rmd160.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rmd160.c; sourceTree = "<group>"; };
+		4E71F29921E748C6002467FE /* rmd160.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rmd160.h; sourceTree = "<group>"; };
+		4E71F29A21E748C6002467FE /* sha2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha2.c; sourceTree = "<group>"; };
+		4E71F29B21E748C6002467FE /* sha2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha2.h; sourceTree = "<group>"; };
+		4E71F29C21E748C6002467FE /* sha3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha3.c; sourceTree = "<group>"; };
+		4E71F29D21E748C6002467FE /* sha3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha3.h; sourceTree = "<group>"; };
+		4E71F29E21E748C6002467FE /* uECC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uECC.c; sourceTree = "<group>"; };
+		4E71F29F21E748C6002467FE /* uECC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uECC.h; sourceTree = "<group>"; };
+		4E71F2A121E748C6002467FE /* EcDsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EcDsa.h; sourceTree = "<group>"; };
+		4E71F2A221E748C6002467FE /* EcDsa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EcDsa.m; sourceTree = "<group>"; };
+		4E71F2A321E748C6002467FE /* EOS_Key_Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOS_Key_Encode.h; sourceTree = "<group>"; };
+		4E71F2A421E748C6002467FE /* EOS_Key_Encode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOS_Key_Encode.m; sourceTree = "<group>"; };
+		4E71F2A521E748C6002467FE /* EosByteWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EosByteWriter.h; sourceTree = "<group>"; };
+		4E71F2A621E748C6002467FE /* EosByteWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EosByteWriter.m; sourceTree = "<group>"; };
+		4E71F2A721E748C6002467FE /* EosPrivateKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EosPrivateKey.h; sourceTree = "<group>"; };
+		4E71F2A821E748C6002467FE /* EosPrivateKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EosPrivateKey.m; sourceTree = "<group>"; };
+		4E71F2A921E748C6002467FE /* Sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sha256.h; sourceTree = "<group>"; };
+		4E71F2AA21E748C6002467FE /* Sha256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sha256.m; sourceTree = "<group>"; };
+		4E71F2AB21E748C6002467FE /* TypeChainId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeChainId.h; sourceTree = "<group>"; };
+		4E71F2AC21E748C6002467FE /* TypeChainId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeChainId.m; sourceTree = "<group>"; };
+		4E71F2AE21E748C6002467FE /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		4E71F2AF21E748C6002467FE /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		4E71F2B121E748C6002467FE /* JKBigDecimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKBigDecimal.h; sourceTree = "<group>"; };
+		4E71F2B221E748C6002467FE /* JKBigDecimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKBigDecimal.m; sourceTree = "<group>"; };
+		4E71F2B321E748C6002467FE /* JKBigInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKBigInteger.h; sourceTree = "<group>"; };
+		4E71F2B421E748C6002467FE /* JKBigInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKBigInteger.m; sourceTree = "<group>"; };
+		4E71F2B621E748C6002467FE /* tommath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tommath.c; sourceTree = "<group>"; };
+		4E71F2B721E748C6002467FE /* tommath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tommath.h; sourceTree = "<group>"; };
+		4E71F2B821E748C6002467FE /* tommath_class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tommath_class.h; sourceTree = "<group>"; };
+		4E71F2B921E748C6002467FE /* tommath_superclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tommath_superclass.h; sourceTree = "<group>"; };
+		4E71F2BA21E748C6002467FE /* NSObject+ToolClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ToolClass.h"; sourceTree = "<group>"; };
+		4E71F2D221E748F2002467FE /* CALayer+XibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XibConfiguration.h"; sourceTree = "<group>"; };
+		4E71F2D321E748F2002467FE /* CALayer+XibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XibConfiguration.m"; sourceTree = "<group>"; };
+		4E71F2D421E748F2002467FE /* NSData+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Hash.h"; sourceTree = "<group>"; };
+		4E71F2D521E748F2002467FE /* NSData+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hash.m"; sourceTree = "<group>"; };
+		4E71F2D621E748F2002467FE /* NSDate+ExFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ExFoundation.h"; sourceTree = "<group>"; };
+		4E71F2D721E748F2002467FE /* NSDate+ExFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ExFoundation.m"; sourceTree = "<group>"; };
+		4E71F2D821E748F2002467FE /* NSDictionary+ExFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ExFoundation.h"; sourceTree = "<group>"; };
+		4E71F2D921E748F2002467FE /* NSDictionary+ExFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ExFoundation.m"; sourceTree = "<group>"; };
+		4E71F2DA21E748F2002467FE /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		4E71F2DB21E748F2002467FE /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		4E71F2DC21E748F2002467FE /* NSString+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extention.h"; sourceTree = "<group>"; };
+		4E71F2DD21E748F2002467FE /* NSString+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extention.m"; sourceTree = "<group>"; };
+		4E71F2DE21E748F2002467FE /* UIImage+ExFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ExFoundation.h"; sourceTree = "<group>"; };
+		4E71F2DF21E748F2002467FE /* UIImage+ExFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ExFoundation.m"; sourceTree = "<group>"; };
+		4E71F2E021E748F2002467FE /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		4E71F2E121E748F2002467FE /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		4E71F2E321E748F3002467FE /* RegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularExpression.h; sourceTree = "<group>"; };
+		4E71F2E421E748F3002467FE /* RegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularExpression.m; sourceTree = "<group>"; };
+		4E71F2E521E748F3002467FE /* WWJRegularJudge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWJRegularJudge.h; sourceTree = "<group>"; };
+		4E71F2E621E748F3002467FE /* WWJRegularJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWJRegularJudge.m; sourceTree = "<group>"; };
 		51E8285F90ADA30D5FE69065 /* libPods-wallet-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wallet-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DE74363F471755A758B470 /* Pods-wallet-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-wallet-ios/Pods-wallet-ios.release.xcconfig"; sourceTree = "<group>"; };
 		F2AA3601ECBE70E53FF32BA6 /* Pods-wallet-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wallet-ios/Pods-wallet-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,12 +211,14 @@
 		04589DDA21E3432000910318 /* wallet-ios */ = {
 			isa = PBXGroup;
 			children = (
+				4E71F28421E748C6002467FE /* SecureModule */,
 				04589DF121E3495500910318 /* Classes */,
 				04589DE121E3432000910318 /* Main.storyboard */,
 				04589DE421E3432100910318 /* Assets.xcassets */,
 				04589DE621E3432100910318 /* LaunchScreen.storyboard */,
 				04589DE921E3432100910318 /* Info.plist */,
 				04589DEA21E3432100910318 /* main.m */,
+				4E71F2BA21E748C6002467FE /* NSObject+ToolClass.h */,
 				04589E0121E34BCE00910318 /* PrefixHeader.pch */,
 			);
 			path = "wallet-ios";
@@ -126,8 +229,9 @@
 			children = (
 				04589DDB21E3432000910318 /* AppDelegate.h */,
 				04589DDC21E3432000910318 /* AppDelegate.m */,
-				04589DF321E34A1B00910318 /* Nav */,
 				04589DF221E34A1300910318 /* Base */,
+				4E71F28121E748A1002467FE /* Misc */,
+				04589DF321E34A1B00910318 /* Nav */,
 				04589E0221E350F500910318 /* Wallet */,
 				04589E0B21E3526800910318 /* Explore */,
 				04589E1121E3528C00910318 /* My */,
@@ -161,6 +265,8 @@
 		04589DFA21E34AA800910318 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				4E71F2D121E748F2002467FE /* Foundation */,
+				4E71F2E221E748F3002467FE /* RegularExpression */,
 				04589DFD21E34AED00910318 /* UIColor+Util.h */,
 				04589DFB21E34AED00910318 /* UIColor+Util.m */,
 				04589DFC21E34AED00910318 /* UIImage+Util.h */,
@@ -222,6 +328,158 @@
 				045E2D5621E4A2F1007439B6 /* TransferVC.xib */,
 			);
 			path = Transfer;
+			sourceTree = "<group>";
+		};
+		4E71F28121E748A1002467FE /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				4E71F28221E748A1002467FE /* BaseUrl.h */,
+				4E71F28321E748A1002467FE /* Constant.h */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		4E71F28421E748C6002467FE /* SecureModule */ = {
+			isa = PBXGroup;
+			children = (
+				4E71F28521E748C6002467FE /* AESCrypt */,
+				4E71F29021E748C6002467FE /* Certificate */,
+				4E71F29321E748C6002467FE /* Crypto */,
+				4E71F2A021E748C6002467FE /* EC */,
+				4E71F2AD21E748C6002467FE /* Hash */,
+				4E71F2B021E748C6002467FE /* JKBigInteger */,
+			);
+			path = SecureModule;
+			sourceTree = "<group>";
+		};
+		4E71F28521E748C6002467FE /* AESCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				4E71F28621E748C6002467FE /* AESCrypt.h */,
+				4E71F28721E748C6002467FE /* AESCrypt.m */,
+				4E71F28821E748C6002467FE /* Base64.h */,
+				4E71F28921E748C6002467FE /* Base64.m */,
+				4E71F28A21E748C6002467FE /* NSData+CommonCrypto.h */,
+				4E71F28B21E748C6002467FE /* NSData+CommonCrypto.m */,
+				4E71F28C21E748C6002467FE /* NSObject+Extension.h */,
+				4E71F28D21E748C6002467FE /* NSObject+Extension.m */,
+				4E71F28E21E748C6002467FE /* PBKDF2.h */,
+				4E71F28F21E748C6002467FE /* PBKDF2.m */,
+			);
+			path = AESCrypt;
+			sourceTree = "<group>";
+		};
+		4E71F29021E748C6002467FE /* Certificate */ = {
+			isa = PBXGroup;
+			children = (
+				4E71F29121E748C6002467FE /* client.p12 */,
+				4E71F29221E748C6002467FE /* server.cer */,
+			);
+			path = Certificate;
+			sourceTree = "<group>";
+		};
+		4E71F29321E748C6002467FE /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				4E71F29421E748C6002467FE /* base58.c */,
+				4E71F29521E748C6002467FE /* libbase58.h */,
+				4E71F29621E748C6002467FE /* macros.h */,
+				4E71F29721E748C6002467FE /* options.h */,
+				4E71F29821E748C6002467FE /* rmd160.c */,
+				4E71F29921E748C6002467FE /* rmd160.h */,
+				4E71F29A21E748C6002467FE /* sha2.c */,
+				4E71F29B21E748C6002467FE /* sha2.h */,
+				4E71F29C21E748C6002467FE /* sha3.c */,
+				4E71F29D21E748C6002467FE /* sha3.h */,
+				4E71F29E21E748C6002467FE /* uECC.c */,
+				4E71F29F21E748C6002467FE /* uECC.h */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		4E71F2A021E748C6002467FE /* EC */ = {
+			isa = PBXGroup;
+			children = (
+				4E71F2A121E748C6002467FE /* EcDsa.h */,
+				4E71F2A221E748C6002467FE /* EcDsa.m */,
+				4E71F2A321E748C6002467FE /* EOS_Key_Encode.h */,
+				4E71F2A421E748C6002467FE /* EOS_Key_Encode.m */,
+				4E71F2A521E748C6002467FE /* EosByteWriter.h */,
+				4E71F2A621E748C6002467FE /* EosByteWriter.m */,
+				4E71F2A721E748C6002467FE /* EosPrivateKey.h */,
+				4E71F2A821E748C6002467FE /* EosPrivateKey.m */,
+				4E71F2A921E748C6002467FE /* Sha256.h */,
+				4E71F2AA21E748C6002467FE /* Sha256.m */,
+				4E71F2AB21E748C6002467FE /* TypeChainId.h */,
+				4E71F2AC21E748C6002467FE /* TypeChainId.m */,
+			);
+			path = EC;
+			sourceTree = "<group>";
+		};
+		4E71F2AD21E748C6002467FE /* Hash */ = {
+			isa = PBXGroup;
+			children = (
+				4E71F2AE21E748C6002467FE /* NSString+Hash.h */,
+				4E71F2AF21E748C6002467FE /* NSString+Hash.m */,
+			);
+			path = Hash;
+			sourceTree = "<group>";
+		};
+		4E71F2B021E748C6002467FE /* JKBigInteger */ = {
+			isa = PBXGroup;
+			children = (
+				4E71F2B121E748C6002467FE /* JKBigDecimal.h */,
+				4E71F2B221E748C6002467FE /* JKBigDecimal.m */,
+				4E71F2B321E748C6002467FE /* JKBigInteger.h */,
+				4E71F2B421E748C6002467FE /* JKBigInteger.m */,
+				4E71F2B521E748C6002467FE /* LibTomMath */,
+			);
+			path = JKBigInteger;
+			sourceTree = "<group>";
+		};
+		4E71F2B521E748C6002467FE /* LibTomMath */ = {
+			isa = PBXGroup;
+			children = (
+				4E71F2B621E748C6002467FE /* tommath.c */,
+				4E71F2B721E748C6002467FE /* tommath.h */,
+				4E71F2B821E748C6002467FE /* tommath_class.h */,
+				4E71F2B921E748C6002467FE /* tommath_superclass.h */,
+			);
+			path = LibTomMath;
+			sourceTree = "<group>";
+		};
+		4E71F2D121E748F2002467FE /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4E71F2D221E748F2002467FE /* CALayer+XibConfiguration.h */,
+				4E71F2D321E748F2002467FE /* CALayer+XibConfiguration.m */,
+				4E71F2D421E748F2002467FE /* NSData+Hash.h */,
+				4E71F2D521E748F2002467FE /* NSData+Hash.m */,
+				4E71F2D621E748F2002467FE /* NSDate+ExFoundation.h */,
+				4E71F2D721E748F2002467FE /* NSDate+ExFoundation.m */,
+				4E71F2D821E748F2002467FE /* NSDictionary+ExFoundation.h */,
+				4E71F2D921E748F2002467FE /* NSDictionary+ExFoundation.m */,
+				4E71F2DA21E748F2002467FE /* NSObject+Extension.h */,
+				4E71F2DB21E748F2002467FE /* NSObject+Extension.m */,
+				4E71F2DC21E748F2002467FE /* NSString+Extention.h */,
+				4E71F2DD21E748F2002467FE /* NSString+Extention.m */,
+				4E71F2DE21E748F2002467FE /* UIImage+ExFoundation.h */,
+				4E71F2DF21E748F2002467FE /* UIImage+ExFoundation.m */,
+				4E71F2E021E748F2002467FE /* UITextView+Placeholder.h */,
+				4E71F2E121E748F2002467FE /* UITextView+Placeholder.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		4E71F2E221E748F3002467FE /* RegularExpression */ = {
+			isa = PBXGroup;
+			children = (
+				4E71F2E321E748F3002467FE /* RegularExpression.h */,
+				4E71F2E421E748F3002467FE /* RegularExpression.m */,
+				4E71F2E521E748F3002467FE /* WWJRegularJudge.h */,
+				4E71F2E621E748F3002467FE /* WWJRegularJudge.m */,
+			);
+			path = RegularExpression;
 			sourceTree = "<group>";
 		};
 		53D365D2A77DFED14657D39E /* Frameworks */ = {
@@ -301,8 +559,10 @@
 			files = (
 				04589DE821E3432100910318 /* LaunchScreen.storyboard in Resources */,
 				04AB4D8121E72C0100418AA2 /* TransferPopView.xib in Resources */,
+				4E71F2C021E748C6002467FE /* client.p12 in Resources */,
 				045E2D5821E4A2F1007439B6 /* TransferVC.xib in Resources */,
 				04589DE521E3432100910318 /* Assets.xcassets in Resources */,
+				4E71F2C121E748C6002467FE /* server.cer in Resources */,
 				04589DE321E3432000910318 /* Main.storyboard in Resources */,
 				04589E1621E3529F00910318 /* MyVC.xib in Resources */,
 				04589E0A21E3523900910318 /* WalletVC.xib in Resources */,
@@ -337,21 +597,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E71F2C421E748C6002467FE /* sha2.c in Sources */,
+				4E71F2BB21E748C6002467FE /* AESCrypt.m in Sources */,
 				04589E0F21E3528600910318 /* ExploreVC.m in Sources */,
+				4E71F2BD21E748C6002467FE /* NSData+CommonCrypto.m in Sources */,
+				4E71F2E821E748F3002467FE /* NSData+Hash.m in Sources */,
 				04AB4D7C21E7202000418AA2 /* AssetsTypePopView.m in Sources */,
 				04589DF821E34A5400910318 /* NavVC.m in Sources */,
+				4E71F2EB21E748F3002467FE /* NSObject+Extension.m in Sources */,
+				4E71F2CC21E748C6002467FE /* TypeChainId.m in Sources */,
+				4E71F2BC21E748C6002467FE /* Base64.m in Sources */,
 				04589DFF21E34AED00910318 /* UIColor+Util.m in Sources */,
 				04589E1521E3529F00910318 /* MyVC.m in Sources */,
 				049334C221E592DB00F1137A /* WTextView.m in Sources */,
 				04589E1A21E37D7800910318 /* ReceiptTransferButton.m in Sources */,
+				4E71F2CF21E748C6002467FE /* JKBigInteger.m in Sources */,
 				04589E0921E3523900910318 /* WalletVC.m in Sources */,
+				4E71F2EF21E748F3002467FE /* RegularExpression.m in Sources */,
+				4E71F2CE21E748C6002467FE /* JKBigDecimal.m in Sources */,
 				04AB4D7F21E72BD400418AA2 /* TransferPopView.m in Sources */,
+				4E71F2E721E748F3002467FE /* CALayer+XibConfiguration.m in Sources */,
 				04589DEB21E3432100910318 /* main.m in Sources */,
 				04589DF921E34A5400910318 /* TabBarVC.m in Sources */,
+				4E71F2E921E748F3002467FE /* NSDate+ExFoundation.m in Sources */,
+				4E71F2C821E748C6002467FE /* EOS_Key_Encode.m in Sources */,
+				4E71F2CD21E748C6002467FE /* NSString+Hash.m in Sources */,
+				4E71F2EC21E748F3002467FE /* NSString+Extention.m in Sources */,
+				4E71F2D021E748C6002467FE /* tommath.c in Sources */,
+				4E71F2CB21E748C6002467FE /* Sha256.m in Sources */,
 				04589E0021E34AED00910318 /* UIImage+Util.m in Sources */,
+				4E71F2C721E748C6002467FE /* EcDsa.m in Sources */,
+				4E71F2C321E748C6002467FE /* rmd160.c in Sources */,
 				045E2D5721E4A2F1007439B6 /* TransferVC.m in Sources */,
+				4E71F2CA21E748C6002467FE /* EosPrivateKey.m in Sources */,
+				4E71F2BF21E748C6002467FE /* PBKDF2.m in Sources */,
+				4E71F2EA21E748F3002467FE /* NSDictionary+ExFoundation.m in Sources */,
+				4E71F2C221E748C6002467FE /* base58.c in Sources */,
+				4E71F2C621E748C6002467FE /* uECC.c in Sources */,
+				4E71F2EE21E748F3002467FE /* UITextView+Placeholder.m in Sources */,
 				04589DDD21E3432000910318 /* AppDelegate.m in Sources */,
+				4E71F2BE21E748C6002467FE /* NSObject+Extension.m in Sources */,
+				4E71F2C521E748C6002467FE /* sha3.c in Sources */,
+				4E71F2C921E748C6002467FE /* EosByteWriter.m in Sources */,
 				04589E0521E3515A00910318 /* BaseVC.m in Sources */,
+				4E71F2ED21E748F3002467FE /* UIImage+ExFoundation.m in Sources */,
+				4E71F2F021E748F3002467FE /* WWJRegularJudge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

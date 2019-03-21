@@ -66,7 +66,7 @@
 - (void)setText:(NSString *)text {
     [super setText:text];
     
-    if (!ISEMPTY(text)) {
+    if (!IsStrEmpty(text)) {
         self.placeholderLabel.hidden = YES;
     }
 }

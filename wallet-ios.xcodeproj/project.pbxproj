@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0442AAB021E839A200448E14 /* PasswordPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442AAAF21E839A200448E14 /* PasswordPopView.m */; };
+		0442AAB221E839B200448E14 /* PasswordPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442AAB121E839B200448E14 /* PasswordPopView.xib */; };
 		04589DDD21E3432000910318 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589DDC21E3432000910318 /* AppDelegate.m */; };
 		04589DE321E3432000910318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04589DE121E3432000910318 /* Main.storyboard */; };
 		04589DE521E3432100910318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04589DE421E3432100910318 /* Assets.xcassets */; };
@@ -29,6 +31,7 @@
 		04AB4D7C21E7202000418AA2 /* AssetsTypePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB4D7B21E7202000418AA2 /* AssetsTypePopView.m */; };
 		04AB4D7F21E72BD400418AA2 /* TransferPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB4D7E21E72BD400418AA2 /* TransferPopView.m */; };
 		04AB4D8121E72C0100418AA2 /* TransferPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB4D8021E72C0100418AA2 /* TransferPopView.xib */; };
+		04AB4D8421E74F8100418AA2 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AB4D8321E74F8100418AA2 /* Toast.m */; };
 		4E71F2BB21E748C6002467FE /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F28721E748C6002467FE /* AESCrypt.m */; };
 		4E71F2BC21E748C6002467FE /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F28921E748C6002467FE /* Base64.m */; };
 		4E71F2BD21E748C6002467FE /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E71F28B21E748C6002467FE /* NSData+CommonCrypto.m */; };
@@ -65,6 +68,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0442AAAE21E839A200448E14 /* PasswordPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasswordPopView.h; sourceTree = "<group>"; };
+		0442AAAF21E839A200448E14 /* PasswordPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordPopView.m; sourceTree = "<group>"; };
+		0442AAB121E839B200448E14 /* PasswordPopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordPopView.xib; sourceTree = "<group>"; };
 		04589DD821E3432000910318 /* wallet-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wallet-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04589DDB21E3432000910318 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04589DDC21E3432000910318 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +110,8 @@
 		04AB4D7D21E72BD400418AA2 /* TransferPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransferPopView.h; sourceTree = "<group>"; };
 		04AB4D7E21E72BD400418AA2 /* TransferPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransferPopView.m; sourceTree = "<group>"; };
 		04AB4D8021E72C0100418AA2 /* TransferPopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferPopView.xib; sourceTree = "<group>"; };
+		04AB4D8221E74F8100418AA2 /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
+		04AB4D8321E74F8100418AA2 /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
 		4E71F28221E748A1002467FE /* BaseUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUrl.h; sourceTree = "<group>"; };
 		4E71F28321E748A1002467FE /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		4E71F28621E748C6002467FE /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
@@ -316,6 +324,11 @@
 				04AB4D7D21E72BD400418AA2 /* TransferPopView.h */,
 				04AB4D7E21E72BD400418AA2 /* TransferPopView.m */,
 				04AB4D8021E72C0100418AA2 /* TransferPopView.xib */,
+				04AB4D8221E74F8100418AA2 /* Toast.h */,
+				04AB4D8321E74F8100418AA2 /* Toast.m */,
+				0442AAAE21E839A200448E14 /* PasswordPopView.h */,
+				0442AAAF21E839A200448E14 /* PasswordPopView.m */,
+				0442AAB121E839B200448E14 /* PasswordPopView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -563,6 +576,7 @@
 				045E2D5821E4A2F1007439B6 /* TransferVC.xib in Resources */,
 				04589DE521E3432100910318 /* Assets.xcassets in Resources */,
 				4E71F2C121E748C6002467FE /* server.cer in Resources */,
+				0442AAB221E839B200448E14 /* PasswordPopView.xib in Resources */,
 				04589DE321E3432000910318 /* Main.storyboard in Resources */,
 				04589E1621E3529F00910318 /* MyVC.xib in Resources */,
 				04589E0A21E3523900910318 /* WalletVC.xib in Resources */,
@@ -620,6 +634,7 @@
 				04589DEB21E3432100910318 /* main.m in Sources */,
 				04589DF921E34A5400910318 /* TabBarVC.m in Sources */,
 				4E71F2E921E748F3002467FE /* NSDate+ExFoundation.m in Sources */,
+				04AB4D8421E74F8100418AA2 /* Toast.m in Sources */,
 				4E71F2C821E748C6002467FE /* EOS_Key_Encode.m in Sources */,
 				4E71F2CD21E748C6002467FE /* NSString+Hash.m in Sources */,
 				4E71F2EC21E748F3002467FE /* NSString+Extention.m in Sources */,
@@ -638,6 +653,7 @@
 				04589DDD21E3432000910318 /* AppDelegate.m in Sources */,
 				4E71F2BE21E748C6002467FE /* NSObject+Extension.m in Sources */,
 				4E71F2C521E748C6002467FE /* sha3.c in Sources */,
+				0442AAB021E839A200448E14 /* PasswordPopView.m in Sources */,
 				4E71F2C921E748C6002467FE /* EosByteWriter.m in Sources */,
 				04589E0521E3515A00910318 /* BaseVC.m in Sources */,
 				4E71F2ED21E748F3002467FE /* UIImage+ExFoundation.m in Sources */,

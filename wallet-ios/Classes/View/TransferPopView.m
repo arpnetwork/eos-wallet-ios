@@ -10,6 +10,9 @@
 
 @interface TransferPopView()
 @property (weak, nonatomic) IBOutlet UIButton *confirmButton;
+@property (weak, nonatomic) IBOutlet UILabel *senderLabel;
+@property (weak, nonatomic) IBOutlet UILabel *receiverLabel;
+@property (weak, nonatomic) IBOutlet UILabel *memoLabel;
 @end
 
 @implementation TransferPopView
@@ -23,16 +26,38 @@
     self.confirmButton.layer.masksToBounds = YES;
 }
 
+- (void)setSender:(NSString *)sender {
+    _sender = sender;
+    [self.senderLabel setText:sender];
+}
+
+- (void)setReceiver:(NSString *)receiver {
+    _receiver = receiver;
+    [self.receiverLabel setText:receiver];
+}
+
+- (void)setMemo:(NSString *)memo {
+    _memo = memo;
+    [self.memoLabel setText:memo];
+}
+
 - (void)showInView:(UIView *)view {
     [view addSubview:self];
 }
 
-- (IBAction)closeButtonClicked:(id)sender {
+- (void)hide {
     [self removeFromSuperview];
 }
 
+- (IBAction)closeButtonClicked:(id)sender {
+    [self hide];
+}
+
 - (IBAction)confirmButtonClicked:(id)sender {
-    [self removeFromSuperview];
+    [self hide];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(didClickTransferConfirmButton:)]) {
+        [self.delegate didClickTransferConfirmButton:self];
+    }
 }
 
 @end

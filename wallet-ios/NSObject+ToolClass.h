@@ -33,6 +33,9 @@
 #define BaseColor [UIColor colorWithHex:0x3d7cf5]
 #define BgColor [UIColor colorWithHex:0xf3f3f8]
 
+#define TRIMSTR(str) [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]
+#define ISEMPTY(str) ((!str || str.length == 0) ? YES : NO)
+
 //获取本地图片的路径
 #define GETIMG(name)  [UIImage imageWithContentsOfFile: [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:name]]
 //获取屏幕

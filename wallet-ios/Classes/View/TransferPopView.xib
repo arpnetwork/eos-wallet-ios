@@ -36,11 +36,12 @@
                                 <constraint firstAttribute="width" constant="62" id="zra-mn-J17"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rcm-yK-IE7">
                             <rect key="frame" x="18" y="43" width="339" height="1"/>
-                            <color key="backgroundColor" red="0.74763196239999996" green="0.74763196239999996" blue="0.74763196239999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" red="0.86666666670000003" green="0.87058823529999996" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="Zx9-ri-TKs"/>
                             </constraints>
@@ -52,6 +53,7 @@
                                 <constraint firstAttribute="height" constant="16" id="U7U-8x-n4y"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQ0-BB-5GR">
@@ -60,11 +62,12 @@
                                 <constraint firstAttribute="height" constant="16" id="5BB-TU-20t"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzQ-KP-OIT">
                             <rect key="frame" x="18" y="96" width="339" height="1"/>
-                            <color key="backgroundColor" red="0.74763196239999996" green="0.74763196239999996" blue="0.74763196239999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" red="0.86666666670000003" green="0.87058823529999996" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="bt8-S4-kUV"/>
                             </constraints>
@@ -76,6 +79,7 @@
                                 <constraint firstAttribute="width" constant="46" id="heQ-GT-hmP"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="receiver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yv-dC-R3e">
@@ -84,11 +88,12 @@
                                 <constraint firstAttribute="height" constant="16" id="WTp-Py-tXU"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sp-SZ-dhJ">
                             <rect key="frame" x="18" y="149" width="339" height="1"/>
-                            <color key="backgroundColor" red="0.74763196239999996" green="0.74763196239999996" blue="0.74763196239999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" red="0.86666666670000003" green="0.87058823529999996" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="Zzl-ox-G0T"/>
                             </constraints>
@@ -100,6 +105,7 @@
                                 <constraint firstAttribute="width" constant="46" id="hmN-UW-t5s"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEMO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arX-Aw-5ws">
@@ -108,11 +114,12 @@
                                 <constraint firstAttribute="height" constant="16" id="Ch5-HQ-CCn"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Qb-pj-KrV">
                             <rect key="frame" x="18" y="202" width="339" height="1"/>
-                            <color key="backgroundColor" red="0.74763196239999996" green="0.74763196239999996" blue="0.74763196239999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" red="0.86666666670000003" green="0.87058823529999996" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="oGt-WX-ld7"/>
                             </constraints>
@@ -179,6 +186,9 @@
             </constraints>
             <connections>
                 <outlet property="confirmButton" destination="l2q-j0-BNt" id="Bvp-k2-77E"/>
+                <outlet property="memoLabel" destination="arX-Aw-5ws" id="lI5-Up-bdC"/>
+                <outlet property="receiverLabel" destination="7yv-dC-R3e" id="eaX-Eu-a1Y"/>
+                <outlet property="senderLabel" destination="vQ0-BB-5GR" id="sMw-yy-3Ab"/>
             </connections>
             <point key="canvasLocation" x="-325" y="66"/>
         </view>

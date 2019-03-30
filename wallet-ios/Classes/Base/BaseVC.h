@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Toast.h"
 
 @interface BaseVC : UIViewController
 - (void)setupBackButton;
 
 - (void)showLoading;
 - (void)hideLoading;
+- (void)showToast:(NSString *)text;
 @end

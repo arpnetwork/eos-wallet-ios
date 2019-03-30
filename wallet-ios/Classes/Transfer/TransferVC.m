@@ -11,10 +11,12 @@
 #import "WTextView.h"
 #import "AssetsTypePopView.h"
 #import "TransferPopView.h"
+#import "Toast.h"
+#import "PasswordPopView.h"
 
 #define ASSETS_TYPE_ARRAY @[@"EOS", @"BHKD"]
 
-@interface TransferVC () <WTextViewDelegate, AssetsTypePopViewDelegate>
+@interface TransferVC () <WTextViewDelegate, AssetsTypePopViewDelegate, TransferPopViewDelegate, PasswordPopViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *accountTextField;
 @property (weak, nonatomic) IBOutlet UILabel *availableBalanceLabel;
 @property (weak, nonatomic) IBOutlet UIButton *assetsTypeButton;
@@ -74,6 +76,24 @@
     [self.assetsTypeButton setTitle:self.assetsType forState:UIControlStateNormal];
 }
 
+- (BOOL)check:(NSString *)receiver amount:(NSString *)amount {
+    if (ISEMPTY(receiver)) {
+        [self showToast:@"请输入账号或长按粘贴地址"];
+        return NO;
+    }
+    if (ISEMPTY(amount)) {
+        [self showToast:@"请输入金额"];
+        return NO;
+    }
+    double dAmount = amount.doubleValue;
+    BOOL isEOS = [@"EOS" isEqualToString:self.assetsType];
+    if ((isEOS && dAmount > self.eosBalance) || (!isEOS && dAmount > self.bhkdBalance)) {
+        [self showToast:@"余额不足，请重新输入"];
+        return NO;
+    }
+    return YES;
+}
+
 - (void)updateAvailableBalance {
     double balance = [@"EOS" isEqualToString:self.assetsType] ? self.eosBalance : self.bhkdBalance;
     [self.availableBalanceLabel setText:[NSString stringWithFormat:@"可用 %.4f %@", balance, self.assetsType]];
@@ -94,10 +114,20 @@
 }
 
 - (IBAction)confirmButtonClicked:(id)sender {
-    TransferPopView *popView = [[[NSBundle mainBundle] loadNibNamed:@"TransferPopView" owner:self options:nil] lastObject];
-    popView.frame = self.view.bounds;
-    [popView showInView:self.view];
+    NSString *receiver = TRIMSTR(self.accountTextField.text);
+    NSString *amount = TRIMSTR(self.amountTextField.text);
+    NSString *memo = TRIMSTR(self.memoTextView.text);
+    if ([self check:receiver amount:amount]) {
+        TransferPopView *popView = [[[NSBundle mainBundle] loadNibNamed:@"TransferPopView" owner:self options:nil] lastObject];
+        popView.frame = self.view.bounds;
+        popView.delegate = self;
+        [popView setSender:self.account];
+        [popView setReceiver:receiver];
+        [popView setMemo:memo];
+        [popView showInView:self.view];
+    }
 }
+
 #pragma mark - AssetsTypePopViewDelegate
 
 - (void)didSelectAssetsTypeItem:(NSInteger)index {
@@ -116,6 +146,28 @@
     if (self.memoHConstraint.constant != height) {
         self.memoHConstraint.constant = height;
         self.containerHConstraint.constant = self.containerH + (height - self.memoH);
+    }
+}
+
+#pragma mark - TransferPopViewDelegate
+
+- (void)didClickTransferConfirmButton:(TransferPopView *)popView {
+    PasswordPopView *passwordPopView = [[[NSBundle mainBundle] loadNibNamed:@"PasswordPopView" owner:self options:nil] lastObject];
+    passwordPopView.frame = self.view.bounds;
+    passwordPopView.delegate = self;
+    //TODO 密码提示
+    passwordPopView.passwordTips = @"";
+    [passwordPopView showInView:self.view];
+}
+
+#pragma mark - PasswordPopViewDelegate
+
+- (void)popView:(PasswordPopView *)popView didConfirm:(NSString *)password {
+    if (!ISEMPTY(password)) {
+        [popView hide];
+        //TODO 转账
+    } else {
+        [self showToast:@"请输入密码"];
     }
 }
 

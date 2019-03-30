@@ -56,4 +56,9 @@
 - (void)hideLoading {
 }
 
+- (void)showToast:(NSString *)text {
+    Toast *toast = [[Toast alloc] initWithText:text];
+    [toast showInView:self.view];
+}
+
 @end

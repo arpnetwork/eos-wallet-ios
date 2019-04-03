@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0442AAB021E839A200448E14 /* PasswordPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442AAAF21E839A200448E14 /* PasswordPopView.m */; };
 		0442AAB221E839B200448E14 /* PasswordPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442AAB121E839B200448E14 /* PasswordPopView.xib */; };
+		0442AAB721E8772E00448E14 /* AssetsDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442AAB521E8772E00448E14 /* AssetsDetailVC.m */; };
+		0442AAB821E8772E00448E14 /* AssetsDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442AAB621E8772E00448E14 /* AssetsDetailVC.xib */; };
+		0442AABC21E8817200448E14 /* AssetsDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442AABA21E8817200448E14 /* AssetsDetailCell.m */; };
+		0442AABD21E8817200448E14 /* AssetsDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442AABB21E8817200448E14 /* AssetsDetailCell.xib */; };
+		0442AAC121E88D5C00448E14 /* TransactionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442AABF21E88D5C00448E14 /* TransactionCell.m */; };
+		0442AAC221E88D5C00448E14 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442AAC021E88D5C00448E14 /* TransactionCell.xib */; };
 		04589DDD21E3432000910318 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589DDC21E3432000910318 /* AppDelegate.m */; };
 		04589DE321E3432000910318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04589DE121E3432000910318 /* Main.storyboard */; };
 		04589DE521E3432100910318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04589DE421E3432100910318 /* Assets.xcassets */; };
@@ -71,6 +77,15 @@
 		0442AAAE21E839A200448E14 /* PasswordPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasswordPopView.h; sourceTree = "<group>"; };
 		0442AAAF21E839A200448E14 /* PasswordPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordPopView.m; sourceTree = "<group>"; };
 		0442AAB121E839B200448E14 /* PasswordPopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordPopView.xib; sourceTree = "<group>"; };
+		0442AAB421E8772E00448E14 /* AssetsDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsDetailVC.h; sourceTree = "<group>"; };
+		0442AAB521E8772E00448E14 /* AssetsDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsDetailVC.m; sourceTree = "<group>"; };
+		0442AAB621E8772E00448E14 /* AssetsDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetsDetailVC.xib; sourceTree = "<group>"; };
+		0442AAB921E8817200448E14 /* AssetsDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsDetailCell.h; sourceTree = "<group>"; };
+		0442AABA21E8817200448E14 /* AssetsDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsDetailCell.m; sourceTree = "<group>"; };
+		0442AABB21E8817200448E14 /* AssetsDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetsDetailCell.xib; sourceTree = "<group>"; };
+		0442AABE21E88D5C00448E14 /* TransactionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionCell.h; sourceTree = "<group>"; };
+		0442AABF21E88D5C00448E14 /* TransactionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionCell.m; sourceTree = "<group>"; };
+		0442AAC021E88D5C00448E14 /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
 		04589DD821E3432000910318 /* wallet-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wallet-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04589DDB21E3432000910318 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04589DDC21E3432000910318 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -198,6 +213,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0442AAB321E876F600448E14 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0442AAB421E8772E00448E14 /* AssetsDetailVC.h */,
+				0442AAB521E8772E00448E14 /* AssetsDetailVC.m */,
+				0442AAB621E8772E00448E14 /* AssetsDetailVC.xib */,
+				0442AAB921E8817200448E14 /* AssetsDetailCell.h */,
+				0442AABA21E8817200448E14 /* AssetsDetailCell.m */,
+				0442AABB21E8817200448E14 /* AssetsDetailCell.xib */,
+				0442AABE21E88D5C00448E14 /* TransactionCell.h */,
+				0442AABF21E88D5C00448E14 /* TransactionCell.m */,
+				0442AAC021E88D5C00448E14 /* TransactionCell.xib */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		04589DCF21E3432000910318 = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +275,7 @@
 				04589E0B21E3526800910318 /* Explore */,
 				04589E1121E3528C00910318 /* My */,
 				045E2D5321E4A2BB007439B6 /* Transfer */,
+				0442AAB321E876F600448E14 /* Assets */,
 				04589DFA21E34AA800910318 /* Util */,
 				04589E1721E37C8E00910318 /* View */,
 			);
@@ -572,10 +604,13 @@
 			files = (
 				04589DE821E3432100910318 /* LaunchScreen.storyboard in Resources */,
 				04AB4D8121E72C0100418AA2 /* TransferPopView.xib in Resources */,
+				0442AAB821E8772E00448E14 /* AssetsDetailVC.xib in Resources */,
 				4E71F2C021E748C6002467FE /* client.p12 in Resources */,
 				045E2D5821E4A2F1007439B6 /* TransferVC.xib in Resources */,
 				04589DE521E3432100910318 /* Assets.xcassets in Resources */,
+				0442AAC221E88D5C00448E14 /* TransactionCell.xib in Resources */,
 				4E71F2C121E748C6002467FE /* server.cer in Resources */,
+				0442AABD21E8817200448E14 /* AssetsDetailCell.xib in Resources */,
 				0442AAB221E839B200448E14 /* PasswordPopView.xib in Resources */,
 				04589DE321E3432000910318 /* Main.storyboard in Resources */,
 				04589E1621E3529F00910318 /* MyVC.xib in Resources */,
@@ -621,6 +656,7 @@
 				4E71F2EB21E748F3002467FE /* NSObject+Extension.m in Sources */,
 				4E71F2CC21E748C6002467FE /* TypeChainId.m in Sources */,
 				4E71F2BC21E748C6002467FE /* Base64.m in Sources */,
+				0442AAB721E8772E00448E14 /* AssetsDetailVC.m in Sources */,
 				04589DFF21E34AED00910318 /* UIColor+Util.m in Sources */,
 				04589E1521E3529F00910318 /* MyVC.m in Sources */,
 				049334C221E592DB00F1137A /* WTextView.m in Sources */,
@@ -632,6 +668,7 @@
 				04AB4D7F21E72BD400418AA2 /* TransferPopView.m in Sources */,
 				4E71F2E721E748F3002467FE /* CALayer+XibConfiguration.m in Sources */,
 				04589DEB21E3432100910318 /* main.m in Sources */,
+				0442AAC121E88D5C00448E14 /* TransactionCell.m in Sources */,
 				04589DF921E34A5400910318 /* TabBarVC.m in Sources */,
 				4E71F2E921E748F3002467FE /* NSDate+ExFoundation.m in Sources */,
 				04AB4D8421E74F8100418AA2 /* Toast.m in Sources */,
@@ -653,6 +690,7 @@
 				04589DDD21E3432000910318 /* AppDelegate.m in Sources */,
 				4E71F2BE21E748C6002467FE /* NSObject+Extension.m in Sources */,
 				4E71F2C521E748C6002467FE /* sha3.c in Sources */,
+				0442AABC21E8817200448E14 /* AssetsDetailCell.m in Sources */,
 				0442AAB021E839A200448E14 /* PasswordPopView.m in Sources */,
 				4E71F2C921E748C6002467FE /* EosByteWriter.m in Sources */,
 				04589E0521E3515A00910318 /* BaseVC.m in Sources */,
@@ -799,7 +837,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XAF9X97T6K;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wallet-ios/PrefixHeader.pch";
 				INFOPLIST_FILE = "wallet-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -819,7 +856,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XAF9X97T6K;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wallet-ios/PrefixHeader.pch";
 				INFOPLIST_FILE = "wallet-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

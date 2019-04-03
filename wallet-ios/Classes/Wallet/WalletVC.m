@@ -9,6 +9,7 @@
 #import "WalletVC.h"
 
 #import "TransferVC.h"
+#import "AssetsDetailVC.h"
 #import "AFNetworking.h"
 
 @interface WalletVC ()
@@ -206,11 +207,16 @@
 }
 
 - (void)eosItemTapped:(UITapGestureRecognizer *)gesture {
-    ILog(@"eosItemTapped");
+    [self pushAssetsDetailVC];
 }
 
 - (void)bhkdItemTapped:(UITapGestureRecognizer *)gesture {
-    ILog(@"bhkdItemTapped");
+    [self pushAssetsDetailVC];
+}
+
+- (void)pushAssetsDetailVC {
+    AssetsDetailVC *vc = [[AssetsDetailVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

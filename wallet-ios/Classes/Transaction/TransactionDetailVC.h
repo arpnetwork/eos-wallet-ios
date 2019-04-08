@@ -1,5 +1,5 @@
 //
-//  AssetsDetailVC.h
+//  TransactionDetailVC.h
 //  wallet-ios
 //
 //  Created by mac on 2019/1/11.
@@ -8,6 +8,6 @@
 
 #import "BaseVC.h"
 
-@interface AssetsDetailVC : BaseVC
-- (instancetype)initWithDict:(NSDictionary *)dict;
+@interface TransactionDetailVC : BaseVC
+
 @end

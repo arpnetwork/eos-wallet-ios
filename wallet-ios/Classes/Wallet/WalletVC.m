@@ -207,15 +207,19 @@
 }
 
 - (void)eosItemTapped:(UITapGestureRecognizer *)gesture {
-    [self pushAssetsDetailVC];
+    [self pushAssetsDetailVC:@"EOS" assetsPrice:self.eosPrice];
 }
 
 - (void)bhkdItemTapped:(UITapGestureRecognizer *)gesture {
-    [self pushAssetsDetailVC];
+    [self pushAssetsDetailVC:@"BHKD" assetsPrice:self.bhkdPrice];
 }
 
-- (void)pushAssetsDetailVC {
-    AssetsDetailVC *vc = [[AssetsDetailVC alloc] init];
+- (void)pushAssetsDetailVC:(NSString *)assetsType assetsPrice:(double)price {
+    AssetsDetailVC *vc = [[AssetsDetailVC alloc] initWithDict:@{@"EOS_BALANCE": [NSNumber numberWithDouble:self.eosBalance],
+                                                                @"BHKD_BALANCE": [NSNumber numberWithDouble:self.bhkdBalance],
+                                                                @"ACCOUNT": self.account,
+                                                                @"ASSETS_TYPE": assetsType,
+                                                                @"ASSETS_PRICE": [NSNumber numberWithDouble:price]}];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

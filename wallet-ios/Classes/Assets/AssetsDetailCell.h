@@ -12,5 +12,9 @@
 #define AssetsDetailCellID @"AssetsDetailCell"
 
 @interface AssetsDetailCell : UITableViewCell
+@property (nonatomic, assign) double balance;
+@property (nonatomic, assign) double price;
+@property (nonatomic, copy) NSString *assetsType;
+
 + (instancetype)cellWithTableView:(UITableView *)tableView forIndexPath:(NSIndexPath *)indexPath;
 @end

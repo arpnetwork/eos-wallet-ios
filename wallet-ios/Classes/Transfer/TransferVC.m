@@ -47,8 +47,6 @@
         self.account = [dict valueForKey:@"ACCOUNT"];
         id obj = [dict valueForKey:@"ASSETS_TYPE"];
         self.assetsType = obj != nil ? obj : @"EOS";
-        ILog(@"eosBalance = %f", self.eosBalance);
-        ILog(@"bhkdBalance = %f", self.bhkdBalance);
     }
     return self;
 }

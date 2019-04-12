@@ -20,6 +20,7 @@
                 <outlet property="eosCNYLabel" destination="EYM-I7-52N" id="oFs-FZ-qwM"/>
                 <outlet property="eosItem" destination="d2y-Jv-L2k" id="k3O-I1-eR8"/>
                 <outlet property="eosPriceLabel" destination="KHZ-pf-5cM" id="R0D-9f-JY5"/>
+                <outlet property="resourceButton" destination="q3a-cv-UPd" id="0K8-HT-gHE"/>
                 <outlet property="topContainer" destination="v3V-Pt-AZs" id="Nd7-0y-s6U"/>
                 <outlet property="totalCNY" destination="bPC-gW-9WP" id="KTM-Za-IaA"/>
                 <outlet property="verticalDivider" destination="Vx5-qZ-CkZ" id="KFP-fT-k9X"/>
@@ -242,6 +243,19 @@
                         <constraint firstItem="3lg-Xq-NaI" firstAttribute="leading" secondItem="jzz-nD-yYz" secondAttribute="trailing" constant="9" id="yay-ap-HT3"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3a-cv-UPd" customClass="ResourceButton">
+                    <rect key="frame" x="294" y="537" width="54" height="54"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.48627450979999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="IH2-7j-Jy8"/>
+                        <constraint firstAttribute="height" constant="54" id="rYN-Br-iNv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="资源" image="icon_resource"/>
+                    <connections>
+                        <action selector="resourceButtonClicked:" destination="-1" eventType="touchUpInside" id="19z-5l-dmz"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -252,11 +266,13 @@
                 <constraint firstAttribute="trailing" secondItem="Uv5-SM-ncE" secondAttribute="trailing" id="Cow-L5-Tv1"/>
                 <constraint firstAttribute="trailing" secondItem="v3V-Pt-AZs" secondAttribute="trailing" id="EXO-l5-BpP"/>
                 <constraint firstItem="v3V-Pt-AZs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GQs-XN-9Kw"/>
+                <constraint firstAttribute="bottom" secondItem="q3a-cv-UPd" secondAttribute="bottom" constant="76" id="KJ9-Fg-flk"/>
                 <constraint firstAttribute="trailing" secondItem="d2y-Jv-L2k" secondAttribute="trailing" id="cR2-U8-fUT"/>
                 <constraint firstItem="Uv5-SM-ncE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gkq-OO-37O"/>
                 <constraint firstItem="Uv5-SM-ncE" firstAttribute="top" secondItem="d2y-Jv-L2k" secondAttribute="bottom" constant="1" id="igX-Im-2SK"/>
                 <constraint firstItem="d2y-Jv-L2k" firstAttribute="top" secondItem="AGM-KH-Inb" secondAttribute="bottom" constant="6" id="jO6-Hy-Hlw"/>
                 <constraint firstItem="AGM-KH-Inb" firstAttribute="top" secondItem="v3V-Pt-AZs" secondAttribute="bottom" id="vsq-1g-5f1"/>
+                <constraint firstAttribute="trailing" secondItem="q3a-cv-UPd" secondAttribute="trailing" constant="27" id="yMp-8h-cut"/>
             </constraints>
             <point key="canvasLocation" x="-171.5" y="57.5"/>
         </view>
@@ -265,6 +281,7 @@
         <image name="icon_bhkd" width="43" height="43"/>
         <image name="icon_eos" width="43" height="43"/>
         <image name="icon_receipt" width="24" height="24"/>
+        <image name="icon_resource" width="32" height="22"/>
         <image name="icon_transfer" width="21" height="18"/>
     </resources>
 </document>

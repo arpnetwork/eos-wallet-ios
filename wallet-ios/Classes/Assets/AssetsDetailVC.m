@@ -11,6 +11,7 @@
 #import "AssetsDetailCell.h"
 #import "TransactionCell.h"
 #import "TransactionDetailVC.h"
+#import "ReceiptVC.h"
 #import "TransferVC.h"
 
 #define SectionHeaderH 38
@@ -31,9 +32,7 @@
 - (instancetype)initWithDict:(NSDictionary *)dict {
     if (self = [super init]) {
         self.eosBalance = ((NSNumber *)[dict valueForKey:@"EOS_BALANCE"]).doubleValue;
-//        self.eosBalance = self.eosBalance > -1 ? self.eosBalance : 0;
         self.bhkdBalance = ((NSNumber *)[dict valueForKey:@"BHKD_BALANCE"]).doubleValue;
-//        self.bhkdBalance = self.bhkdBalance > -1 ? self.bhkdBalance : 0;
         self.account = [dict valueForKey:@"ACCOUNT"];
         self.assetsType = [dict valueForKey:@"ASSETS_TYPE"];
         self.price = ((NSNumber *)[dict valueForKey:@"ASSETS_PRICE"]).doubleValue;
@@ -60,6 +59,8 @@
 }
 
 - (IBAction)receiptButtonClicked:(id)sender {
+    ReceiptVC *vc = [[ReceiptVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)transferButtonClicked:(id)sender {

@@ -17,6 +17,9 @@
 		0442AAC221E88D5C00448E14 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442AAC021E88D5C00448E14 /* TransactionCell.xib */; };
 		0442AAC721E89E3400448E14 /* TransactionDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442AAC521E89E3400448E14 /* TransactionDetailVC.m */; };
 		0442AAC821E89E3400448E14 /* TransactionDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442AAC621E89E3400448E14 /* TransactionDetailVC.xib */; };
+		0447116521E9C2430047B43C /* ResourceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0447116421E9C2430047B43C /* ResourceButton.m */; };
+		0447116A21E9C80A0047B43C /* ReceiptVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0447116821E9C80A0047B43C /* ReceiptVC.m */; };
+		0447116B21E9C80A0047B43C /* ReceiptVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0447116921E9C80A0047B43C /* ReceiptVC.xib */; };
 		04589DDD21E3432000910318 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04589DDC21E3432000910318 /* AppDelegate.m */; };
 		04589DE321E3432000910318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04589DE121E3432000910318 /* Main.storyboard */; };
 		04589DE521E3432100910318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04589DE421E3432100910318 /* Assets.xcassets */; };
@@ -91,6 +94,11 @@
 		0442AAC421E89E3400448E14 /* TransactionDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransactionDetailVC.h; sourceTree = "<group>"; };
 		0442AAC521E89E3400448E14 /* TransactionDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransactionDetailVC.m; sourceTree = "<group>"; };
 		0442AAC621E89E3400448E14 /* TransactionDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetailVC.xib; sourceTree = "<group>"; };
+		0447116321E9C2430047B43C /* ResourceButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResourceButton.h; sourceTree = "<group>"; };
+		0447116421E9C2430047B43C /* ResourceButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResourceButton.m; sourceTree = "<group>"; };
+		0447116721E9C80A0047B43C /* ReceiptVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReceiptVC.h; sourceTree = "<group>"; };
+		0447116821E9C80A0047B43C /* ReceiptVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReceiptVC.m; sourceTree = "<group>"; };
+		0447116921E9C80A0047B43C /* ReceiptVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiptVC.xib; sourceTree = "<group>"; };
 		04589DD821E3432000910318 /* wallet-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wallet-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04589DDB21E3432000910318 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04589DDC21E3432000910318 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -244,6 +252,16 @@
 			path = Transaction;
 			sourceTree = "<group>";
 		};
+		0447116621E9C7D30047B43C /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				0447116721E9C80A0047B43C /* ReceiptVC.h */,
+				0447116821E9C80A0047B43C /* ReceiptVC.m */,
+				0447116921E9C80A0047B43C /* ReceiptVC.xib */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
 		04589DCF21E3432000910318 = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +307,7 @@
 				04589E0221E350F500910318 /* Wallet */,
 				04589E0B21E3526800910318 /* Explore */,
 				04589E1121E3528C00910318 /* My */,
+				0447116621E9C7D30047B43C /* Receipt */,
 				045E2D5321E4A2BB007439B6 /* Transfer */,
 				0442AAB321E876F600448E14 /* Assets */,
 				0442AAC321E89E0100448E14 /* Transaction */,
@@ -377,6 +396,8 @@
 				0442AAAE21E839A200448E14 /* PasswordPopView.h */,
 				0442AAAF21E839A200448E14 /* PasswordPopView.m */,
 				0442AAB121E839B200448E14 /* PasswordPopView.xib */,
+				0447116321E9C2430047B43C /* ResourceButton.h */,
+				0447116421E9C2430047B43C /* ResourceButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -621,6 +642,7 @@
 				04589DE821E3432100910318 /* LaunchScreen.storyboard in Resources */,
 				04AB4D8121E72C0100418AA2 /* TransferPopView.xib in Resources */,
 				0442AAC821E89E3400448E14 /* TransactionDetailVC.xib in Resources */,
+				0447116B21E9C80A0047B43C /* ReceiptVC.xib in Resources */,
 				0442AAB821E8772E00448E14 /* AssetsDetailVC.xib in Resources */,
 				4E71F2C021E748C6002467FE /* client.p12 in Resources */,
 				045E2D5821E4A2F1007439B6 /* TransferVC.xib in Resources */,
@@ -702,6 +724,7 @@
 				4E71F2CA21E748C6002467FE /* EosPrivateKey.m in Sources */,
 				4E71F2BF21E748C6002467FE /* PBKDF2.m in Sources */,
 				4E71F2EA21E748F3002467FE /* NSDictionary+ExFoundation.m in Sources */,
+				0447116521E9C2430047B43C /* ResourceButton.m in Sources */,
 				4E71F2C221E748C6002467FE /* base58.c in Sources */,
 				4E71F2C621E748C6002467FE /* uECC.c in Sources */,
 				4E71F2EE21E748F3002467FE /* UITextView+Placeholder.m in Sources */,
@@ -711,6 +734,7 @@
 				0442AABC21E8817200448E14 /* AssetsDetailCell.m in Sources */,
 				0442AAB021E839A200448E14 /* PasswordPopView.m in Sources */,
 				4E71F2C921E748C6002467FE /* EosByteWriter.m in Sources */,
+				0447116A21E9C80A0047B43C /* ReceiptVC.m in Sources */,
 				04589E0521E3515A00910318 /* BaseVC.m in Sources */,
 				4E71F2ED21E748F3002467FE /* UIImage+ExFoundation.m in Sources */,
 				4E71F2F021E748F3002467FE /* WWJRegularJudge.m in Sources */,

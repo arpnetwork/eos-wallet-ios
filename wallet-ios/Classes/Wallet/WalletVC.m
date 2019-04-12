@@ -8,6 +8,7 @@
 
 #import "WalletVC.h"
 
+#import "ReceiptVC.h"
 #import "TransferVC.h"
 #import "AssetsDetailVC.h"
 #import "AFNetworking.h"
@@ -25,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *bhkdPriceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bhkdBalanceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bhkdCNYLabel;
+@property (weak, nonatomic) IBOutlet UIButton *resourceButton;
 
 @property (copy, nonatomic) NSString *account;
 @property (assign, nonatomic) double eosPrice;
@@ -57,6 +59,8 @@
 - (void)setupViews {
     self.topContainer.backgroundColor = BaseColor;
     self.verticalDivider.backgroundColor = [UIColor colorWithHex:0xd8d8d8];
+    self.resourceButton.layer.cornerRadius = 27;
+    self.resourceButton.layer.masksToBounds = YES;
     
     UITapGestureRecognizer *tapEOSItemGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(eosItemTapped:)];
     [self.eosItem addGestureRecognizer:tapEOSItemGesture];
@@ -196,7 +200,8 @@
 }
 
 - (IBAction)receiptButtonClicked:(id)sender {
-    ILog(@"receiptButtonClicked");
+    ReceiptVC *vc = [[ReceiptVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)transferButtonClicked:(id)sender {
@@ -204,6 +209,9 @@
                                                                 @"BHKD_BALANCE": [NSNumber numberWithDouble:self.bhkdBalance],
                                                                 @"ACCOUNT": self.account}];
     [self.navigationController pushViewController:transferVC animated:YES];
+}
+
+- (IBAction)resourceButtonClicked:(id)sender {
 }
 
 - (void)eosItemTapped:(UITapGestureRecognizer *)gesture {

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "NavVC.h"
+#import "LancherVC.h"
 #import "TabBarVC.h"
 #import "EosPrivateKey.h"
 
@@ -59,7 +61,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = BgColor;
-    self.window.rootViewController = [[TabBarVC alloc] init];
+    self.window.rootViewController = [[NavVC alloc] initWithRootViewController:[[LancherVC alloc] init]];
     [self.window makeKeyAndVisible];
 }
 

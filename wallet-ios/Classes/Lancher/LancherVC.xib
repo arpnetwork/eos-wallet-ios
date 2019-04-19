@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LancherVC">
+            <connections>
+                <outlet property="eosLabel" destination="IkC-uM-KFU" id="ZMb-sB-4hP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你是否有账号?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj2-OX-0pC">
+                    <rect key="frame" x="22" y="18" width="146" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="146" id="Fv7-gB-SBQ"/>
+                        <constraint firstAttribute="height" constant="23" id="cVf-jB-Ilu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="钱包体系" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6I-ge-qNS">
+                    <rect key="frame" x="22" y="51" width="74" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="0Cn-zM-cZB"/>
+                        <constraint firstAttribute="height" constant="19" id="Nlw-B8-tDZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" red="0.23921568630000001" green="0.48627450979999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkC-uM-KFU">
+                    <rect key="frame" x="104" y="51" width="38" height="19"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.48627450979999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="VZT-C3-sKy"/>
+                        <constraint firstAttribute="height" constant="19" id="ukc-OL-IPZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1af-3g-e9I">
+                    <rect key="frame" x="22" y="110" width="152" height="226"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="152" id="97g-ME-lHg"/>
+                        <constraint firstAttribute="height" constant="226" id="JF8-rS-AIr"/>
+                    </constraints>
+                    <state key="normal" image="have_account"/>
+                    <connections>
+                        <action selector="hasAccountButtonClicked:" destination="-1" eventType="touchUpInside" id="ZA6-Tr-rt0"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我有账号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teE-PF-acO">
+                    <rect key="frame" x="22" y="292" width="152" height="16"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="152" id="c6g-kY-UQr"/>
+                        <constraint firstAttribute="height" constant="16" id="q3u-95-DrN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="导入账号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCE-G2-EAQ">
+                    <rect key="frame" x="22" y="312" width="152" height="16"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="AZu-Zc-rxU"/>
+                        <constraint firstAttribute="width" constant="152" id="OeZ-XW-qcY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.27058823529411763" green="0.4823529411764706" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cC-d6-fVD">
+                    <rect key="frame" x="201" y="110" width="152" height="226"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="152" id="4uD-Ec-8rq"/>
+                        <constraint firstAttribute="height" constant="226" id="Tj6-6S-tfB"/>
+                    </constraints>
+                    <state key="normal" image="have_no_account"/>
+                    <connections>
+                        <action selector="hasNoAccountButtonClicked:" destination="-1" eventType="touchUpInside" id="zTv-XI-ryh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我没有账号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGA-Ks-5Wp">
+                    <rect key="frame" x="201" y="292" width="152" height="16"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="152" id="UH4-Pg-LOy"/>
+                        <constraint firstAttribute="height" constant="16" id="dNr-OO-4Qy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创建账号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zj7-mY-lRb">
+                    <rect key="frame" x="201" y="312" width="152" height="16"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="LEZ-dG-CSr"/>
+                        <constraint firstAttribute="width" constant="152" id="YL7-ez-Ooj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.27058823529999998" green="0.4823529412" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zj7-mY-lRb" firstAttribute="top" secondItem="sGA-Ks-5Wp" secondAttribute="bottom" constant="4" id="3fv-26-ciL"/>
+                <constraint firstItem="8cC-d6-fVD" firstAttribute="top" secondItem="1af-3g-e9I" secondAttribute="top" id="BMv-nN-cL5"/>
+                <constraint firstItem="IkC-uM-KFU" firstAttribute="leading" secondItem="P6I-ge-qNS" secondAttribute="trailing" constant="8" id="Beg-hq-NJa"/>
+                <constraint firstItem="P6I-ge-qNS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="22" id="CCt-pQ-52x"/>
+                <constraint firstItem="zj7-mY-lRb" firstAttribute="leading" secondItem="sGA-Ks-5Wp" secondAttribute="leading" id="DX5-x6-Xk4"/>
+                <constraint firstItem="P6I-ge-qNS" firstAttribute="top" secondItem="jj2-OX-0pC" secondAttribute="bottom" constant="10" id="EAi-IS-14C"/>
+                <constraint firstItem="1af-3g-e9I" firstAttribute="top" secondItem="P6I-ge-qNS" secondAttribute="bottom" constant="40" id="GRY-QB-RBa"/>
+                <constraint firstItem="jj2-OX-0pC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="18" id="HNK-ac-CHu"/>
+                <constraint firstItem="IkC-uM-KFU" firstAttribute="top" secondItem="jj2-OX-0pC" secondAttribute="bottom" constant="10" id="LDU-4j-tdQ"/>
+                <constraint firstItem="1af-3g-e9I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="22" id="LLa-oy-ZOH"/>
+                <constraint firstItem="sGA-Ks-5Wp" firstAttribute="top" secondItem="8cC-d6-fVD" secondAttribute="top" constant="182" id="QpF-Gh-OEt"/>
+                <constraint firstItem="gCE-G2-EAQ" firstAttribute="top" secondItem="teE-PF-acO" secondAttribute="bottom" constant="4" id="ZPx-gw-0dK"/>
+                <constraint firstItem="gCE-G2-EAQ" firstAttribute="leading" secondItem="teE-PF-acO" secondAttribute="leading" id="bHy-AN-Nyo"/>
+                <constraint firstItem="teE-PF-acO" firstAttribute="top" secondItem="1af-3g-e9I" secondAttribute="top" constant="182" id="bcq-dC-sja"/>
+                <constraint firstItem="jj2-OX-0pC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="22" id="gar-w9-Cl1"/>
+                <constraint firstAttribute="trailing" secondItem="8cC-d6-fVD" secondAttribute="trailing" constant="22" id="mlD-SM-PM9"/>
+                <constraint firstItem="teE-PF-acO" firstAttribute="leading" secondItem="1af-3g-e9I" secondAttribute="leading" id="sia-aL-DbA"/>
+                <constraint firstItem="sGA-Ks-5Wp" firstAttribute="leading" secondItem="8cC-d6-fVD" secondAttribute="leading" id="x85-lR-Qdj"/>
+            </constraints>
+            <point key="canvasLocation" x="-402.5" y="60.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="have_account" width="152" height="225"/>
+        <image name="have_no_account" width="152" height="225"/>
+    </resources>
+</document>
